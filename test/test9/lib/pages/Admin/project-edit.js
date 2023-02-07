@@ -1,6 +1,6 @@
 import { useEffect } from "../..";
 
-const ProjectEdit = () => {
+const ProjectEdit = (id) => {
   useEffect(() => {
     console.log(id);
   });

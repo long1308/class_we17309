@@ -37,7 +37,7 @@ const PojectAdminPage = () => {
         <td>${index}</td>
         <td>${item.name}</td>
         <td><button class = "btn btn-danger"data-id = ${item.id} id = "delete">Xóa</button>
-        <a  class = "btn btn-success"href="/projects/${item.id}/edit">Sửa</a>
+        <a  class = "btn btn-success"href="/admin/${item.id}/edit">Sửa</a>
         </td>
           </tr>`
         )}
