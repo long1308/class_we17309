@@ -22,9 +22,10 @@ const PojectAdminPage = () => {
     });
   });
   return /*html*/ `
+  <div class = "container">
   <h1>Danh sánh dự án</h1>
-  <a href="/add">Thêm</a>
-    <table>
+  <a class = "btn btn-primary" href="/add">Thêm</a>
+    <table class = 'table  '>
       <thead>
          <th>#</th>       
          <th>Name</th>       
@@ -35,13 +36,14 @@ const PojectAdminPage = () => {
           (item, index) => /*html*/ `<tr>
         <td>${index}</td>
         <td>${item.name}</td>
-        <td><button data-id = ${item.id} id = "delete">Xóa</button>
-        <a href="/projects/${item.id}/edit">Sửa</a>
+        <td><button class = "btn btn-danger"data-id = ${item.id} id = "delete">Xóa</button>
+        <a  class = "btn btn-success"href="/projects/${item.id}/edit">Sửa</a>
         </td>
           </tr>`
         )}
       </tbody>
     </table>
+  </div>
   `;
 };
 

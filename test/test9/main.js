@@ -16,7 +16,7 @@ router.on("/projects", () => render(Projects, app));
 router.on("/project/:id", (param) => render(() => ProjectDetall(param), app));
 router.on("/admin", () => render(PojectAdminPage, app));
 router.on("/add", () => render(ProjectAdd, app));
-router.on("/project/:id/edit", (param) =>
+router.on("/projects/:id/edit", (param) =>
   render(() => ProjectEdit(param), app)
 );
 router.notFound(() => render(NotFound, app));

@@ -15,10 +15,10 @@ const ProjectAdd = () => {
     });
   });
   return /*html*/ `
-   <form action= ''id = 'form-add'>
+   <form action= ''id = 'form-add' class = "container">
     <label for="">Thêm mới</label>
-    <input id="input-add" value="">
-    <button type="">Thêm</button>
+    <input id="input-add" class = "form-control" value="">
+    <button type="" class = "btn btn-primary my-3">Thêm</button>
   </form>
   `;
 };
